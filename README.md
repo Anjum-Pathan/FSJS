@@ -1,16 +1,16 @@
 # Assignments (Blogs & Articles) Link
 
 ### Follow the below links
-1. [Basic of Html] (https://anjum1198.hashnode.dev/beginning-the-first-step-of-the-journey-with-basic-web-and-html)
+1. [Basic of Html ](https://anjum1198.hashnode.dev/beginning-the-first-step-of-the-journey-with-basic-web-and-html)
 2. [CSS selectors ](https://anjum1198.hashnode.dev/lets-start-with-basic-css-selectors)
 3. [CSS FlexBox & it's properties](https://anjum1198.hashnode.dev/everything-you-need-to-know-about-flex-box)
-4. [CSS Flexbox & it's properties](https://anjum1198.hashnode.dev/do-you-know-what-is-positions-in-css)
-5. [CSS Flexbox & it's properties](https://anjum1198.hashnode.dev/do-you-get-confused-between-flex-box-and-grid)
-6. [CSS Flexbox & it's properties](https://anjum1198.hashnode.dev/are-you-ready-to-learn-media-query)
-7. [CSS Flexbox & it's properties](https://anjum1198.hashnode.dev/do-you-get-confused-between-what-is-git-and-github)
-8. [CSS Flexbox & it's properties](https://anjum1198.hashnode.dev/array-methods)
-9. [CSS Flexbox & it's properties](https://anjum1198.hashnode.dev/lets-learn-the-database-and-its-types)
-10. [CSS Flexbox & it's properties](https://anjum1198.hashnode.dev/do-you-know-how-to-build-a-web-server-using-nodejs-and-express)
+4. [CSS position](https://anjum1198.hashnode.dev/do-you-know-what-is-positions-in-css)
+5. [CSS grid and flex](https://anjum1198.hashnode.dev/do-you-get-confused-between-flex-box-and-grid)
+6. [CSS mediaquery](https://anjum1198.hashnode.dev/are-you-ready-to-learn-media-query)
+7. [git and github](https://anjum1198.hashnode.dev/do-you-get-confused-between-what-is-git-and-github)
+8. [array methods](https://anjum1198.hashnode.dev/array-methods)
+9. [database and its types](https://anjum1198.hashnode.dev/lets-learn-the-database-and-its-types)
+10. [nodejs and express](https://anjum1198.hashnode.dev/do-you-know-how-to-build-a-web-server-using-nodejs-and-express)
 
 # HTML & CSS Projects Link
 
