@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", sans-serif;
+}
+body {
+  background-image: url("assets/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 12px 40px;
+}
+.grow-list {
+  margin-right: auto;
+  margin-left: 40px;
+  border-left: 2px solid white;
+  padding: 7px 40px;
+}
+.navbar img {
+  width: 120px;
+  height: 40px;
+}
+.list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  color: aliceblue;
+}
+
+.button-small {
+  background-color: #9153b5;
+  border-radius: 8px;
+  color: white;
+  padding: 6px 15px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.hero-heading {
+  font-size: 60px;
+  margin-bottom: 0px;
+  margin: 50px 0 0 0;
+  width: 567px;
+}
+
+.button-large {
+  background-color: #9153b5;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  margin: 30px;
+  padding: 15px;
+}
+.hero-description {
+  margin: 15px 0px;
+}
+.list-item:nth-child(1)::after {
+  content: "\02C5";
+  margin: 0 7px;
+}

@@ -1,0 +1,165 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Orbitron;
+}
+body {
+  max-width: 1000px;
+  overflow-y: hidden;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+}
+.navbar-container img {
+  display: flex;
+  align-items: center;
+  width: 115px;
+  height: 40px;
+}
+.search-icon svg {
+  width: 17px;
+  height: 17px;
+}
+.button-group {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+}
+.nav-button {
+  display: flex;
+  justify-content: center;
+  color: black;
+  border-radius: 9px;
+  padding: 10px 30px;
+  margin-right: 30px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 10px 10px 10px 10px black;
+  height: 25px;
+  background-color: white;
+  align-items: center;
+}
+.list-item {
+  color: black;
+}
+.list-item:nth-child(1) {
+  color: black;
+  font-weight: bolder;
+  border-bottom: 2px solid black;
+}
+.square img {
+  width: 250px;
+  height: 200px;
+  position: relative;
+  left: 130px;
+  top: 225px;
+}
+.hero-container {
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-bottom: 60px;
+}
+.hero-container > div > img {
+  width: 326px;
+  position: relative;
+  bottom: 218px;
+}
+.hero-heading {
+  font-size: 47px;
+  position: relative;
+  bottom: 566px;
+  left: 430px;
+  display: inline;
+}
+.hero-description {
+  display: inline-block;
+  font-size: 13px;
+  width: 470px;
+  position: relative;
+  bottom: 538px;
+  left: 500px;
+  color: gray;
+  text-align: center;
+  font-family: sans-serif;
+}
+.hero-container-right div:nth-child(odd) {
+  display: inline-block;
+  position: relative;
+  bottom: 440px;
+  left: 100px;
+}
+.hero-container-right div:nth-child(odd) button:nth-child(odd) {
+  background-color: white;
+  border-radius: 10px;
+  padding: 6px 18px;
+  font-size: 15px;
+  color: gray;
+}
+.hero-container-right div:nth-child(odd) button:nth-child(even) {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 6px 18px;
+  font-size: 15px;
+}
+.hero-container-right div:nth-child(even) h4 {
+  display: inline;
+  position: relative;
+  bottom: 390px;
+  left: 684px;
+  color: gray;
+  font-family: sans-serif;
+}
+.hero-container .star:nth-child(2) img {
+  position: relative;
+  top: 187px;
+  left: 190px;
+  width: 30px;
+}
+.hero-container .star:nth-child(3) img {
+  position: relative;
+  bottom: 179px;
+  left: 695px;
+  width: 45px;
+}
+.icons {
+  position: relative;
+  bottom: 340px;
+  left: 570px;
+  display: inline;
+}
+.icons span:nth-child(1) img {
+  width: 30px;
+}
+.icons span:nth-child(2) img {
+  width: 30px;
+}
+.icons span:nth-child(3) img {
+  width: 30px;
+}
+.icons span:nth-child(4) img {
+  width: 30px;
+}
+.globe img {
+  position: relative;
+  left: 150px;
+  bottom: 177px;
+  width: 48px;
+}
+@media only screen and (max-width: 650px) and (min-width: 350px) {
+  body {
+    display: block;
+  }
+}
