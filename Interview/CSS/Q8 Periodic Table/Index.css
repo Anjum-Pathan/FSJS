@@ -1,0 +1,57 @@
+table {
+  border-spacing: 9px;
+}
+.a1 {
+  border: 2px solid #b1b1b1;
+  background-color: #fe9898;
+  position: relative;
+  text-align: center;
+  width: 25px;
+}
+.a2 {
+  border: 2px solid #b1b1b1;
+  background-color: #99ccff;
+  position: relative;
+  text-align: center;
+  width: 25px;
+}
+.a3 {
+  border: 2px solid #b1b1b1;
+  background-color: #fdff8c;
+  position: relative;
+  text-align: center;
+  width: 25px;
+}
+.a4 {
+  border: 2px solid #b1b1b1;
+  background-color: #9afd98;
+  position: relative;
+  text-align: center;
+  width: 25px;
+}
+
+.number {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: small;
+}
+
+.letter {
+  display: block;
+  margin-top: 10px;
+  font-size: small;
+}
+span,
+.arrow {
+  font-size: x-small;
+  display: flex;
+}
+.arrow {
+  margin-left: 4px;
+}
+.down-arrow {
+  display: block;
+  margin-top: 14px;
+  margin-right: 10px;
+}
