@@ -1,73 +1,59 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: blanchedalmond;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-header {
-  display: flex;
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 400px;
+}
+#main h1 {
+  font-size: 40px;
+  text-align: center;
+}
+#main .text,
+.img {
+  width: 50%;
+  height: 400px;
+  float: left;
+  border: 1px solid gray;
+}
+.text p {
+  font-size: 20px;
+  text-align: justify;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 0;
+  padding: 20px;
+  background-color: coral;
+  width: 100%;
+  height: 100%;
 }
-
-.logo-section {
-  background-color: lightblue;
-  height: 20px;
-  width: 100px;
-}
-
-nav {
-  background-color: lightgray;
-  display: flex;
-  justify-content: space-around;
-
+img {
   height: 100%;
   width: 100%;
-}
-
-.main-section {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 20px;
-}
-
-article {
-  background-color: bisque;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-}
-
-.footer-section {
-  background-color: blueviolet;
-}
-/* Media queries for tablet and mobile devices */
-
-@media (max-width: 1024px) {
-  .main-section {
-    grid-template-columns: 1fr;
-  }
-
-  .image-section {
-    margin-top: 20px;
-  }
+  padding: 30px;
 }
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
+  #main .text,
+  .img {
+    width: 100%; /* Update the width to occupy full width on smaller screens */
+    height: auto; /* Remove the fixed height to allow for dynamic height */
+    float: none; /* Remove the float */
   }
 
-  .logo-section {
-    margin-bottom: 10px;
+  .text p {
+    font-size: 16px; /* Decrease the font size for smaller screens */
+    padding: 10px; /* Adjust the padding for smaller screens */
   }
+}
 
-  .footer-section {
-    width: 100%;
+@media (max-width: 480px) {
+  #main h1 {
+    font-size: 30px; /* Adjust the font size for smaller screens */
   }
 }
