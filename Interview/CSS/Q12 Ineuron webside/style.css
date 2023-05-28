@@ -112,7 +112,7 @@ nav {
 
 .imgs_slides {
   width: 500%;
-  height: 350px;
+  height: 550px;
   display: flex;
 }
 .imgs_slides input {
@@ -159,11 +159,11 @@ nav {
 #radio3:checked ~ .first {
   margin-left: -40%;
 }
-/* hardwork section */
-
-.hardwork {
-  margin-top: -150px;
+/* hardwork */
+.hardwork img {
+  margin-top: -100px;
 }
+
 /* company name slider */
 
 .slider-section {
@@ -483,7 +483,12 @@ button {
   overflow: hidden;
   position: relative;
 }
-
+.hackothon h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #060677;
+  margin-bottom: 6%;
+}
 .hackathon_slides {
   width: 100%;
   height: 100%;
@@ -536,4 +541,176 @@ button {
 
 #radio3:checked ~ .hackathon_slides {
   margin-left: -40%;
+}
+/* hackathon comapany */
+.slider-hackathon {
+  text-align: center;
+  padding: 20px;
+  background-color: #eef0f5;
+}
+
+.heading-hackathon {
+  font-weight: bold;
+  font-size: 30px;
+  color: #060677;
+}
+
+.logo-slider {
+  display: flex;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.logo-slide {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /* Add any additional styling for the logo images */
+}
+
+/* Animation */
+@keyframes hackathonSlider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.logo-slider {
+  animation: hackathonSlider 20s linear infinite;
+}
+
+/* our product */
+.product-title {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  color: #060677;
+}
+.products {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-deatils {
+  width: 250px;
+  margin: 20px;
+
+  padding: 20px;
+  text-align: center;
+}
+
+.product-deatils img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-deatils a {
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 20px;
+  color: #060677;
+}
+
+.product-deatils p {
+  margin-top: 10px;
+  color: #555555;
+}
+
+/* institude */
+.partner-ins h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  color: #060677;
+}
+.partner-ins img {
+  height: 60%;
+  width: 70%;
+  margin-left: 190px;
+  padding-top: 5%;
+  margin-bottom: 15%;
+}
+/* footer section */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #233c7b;
+  color: white;
+  padding: 20px;
+}
+
+.footer h2 {
+  border-bottom: 2px solid orange;
+  padding-bottom: 10px;
+}
+
+.footer .social-media {
+  border-bottom: 2px solid orange;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.footer .footer-icon img {
+  margin-right: 10px;
+}
+
+.footer .location,
+.footer .email {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footer .location img,
+.footer .email img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.footer .location a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer .email h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.footer .email p {
+  margin: 0;
+}
+
+.footer .iso-logo img {
+  margin-top: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.footer .f2,
+.footer .f3 {
+  margin-top: 30px;
+}
+
+.footer .f2 a,
+.footer .f3 a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
