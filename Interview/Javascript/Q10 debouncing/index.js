@@ -38,11 +38,11 @@ function displayResults(results) {
   const searchResults = document.getElementById("search-results");
   searchResults.innerHTML = "";
 
-  if (results.length === 0) {
-    const listItem = document.createElement("li");
-    listItem.textContent = "No results found.";
-    searchResults.appendChild(listItem);
+  if (results.length === 0 || searchInput.value === "") {
+    searchResults.style.display = "none"; // Hide the search results list
   } else {
+    searchResults.style.display = "block"; // Show the search results list
+
     results.forEach((result) => {
       const listItem = document.createElement("li");
       listItem.textContent = result;
