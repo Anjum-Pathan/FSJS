@@ -1,0 +1,54 @@
+.counter-app {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.count {
+  font-size: 36px;
+  color: #333;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.increment-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.decrement-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.reset-button {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.8;
+}
