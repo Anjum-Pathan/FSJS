@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Web App</title>
+    <style>
+      /* CSS styles here */
+      .header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: black;
+      }
+
+      .heading {
+        margin: 10px;
+        font-size: 16px;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+      }
+
+      .links {
+        display: flex;
+        gap: 20px;
+        margin-left: 10%;
+      }
+
+      nav h1 {
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        padding-bottom: 5%;
+        color: rgb(8, 8, 87);
+      }
+
+      nav {
+        padding: 70px;
+        margin-left: 8%;
+      }
+
+      nav .details {
+        font-size: 20px;
+        color: rgb(85, 85, 85);
+      }
+
+      .details a {
+        color: black;
+      }
+
+      .req {
+        font-weight: bolder;
+        color: rgb(53, 52, 52);
+      }
+
+      main {
+        padding: 80px;
+        margin-left: 8%;
+      }
+
+      main h1 {
+        font-weight: lighter;
+      }
+
+      .blog {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #f7f7f7;
+      }
+
+      .blog h2 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .blog p {
+        margin: 10px 0;
+        font-size: 14px;
+      }
+
+      .delete-btn {
+        background-color: rgb(85, 85, 241);
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .title {
+        padding: 10px;
+      }
+
+      #title {
+        margin-bottom: 30px;
+      }
+
+      .btn button {
+        margin-top: 10px;
+        border-radius: 15px;
+        background-color: beige;
+        margin-left: 25%;
+      }
+
+      #blogForm {
+        padding: 40px;
+        padding-left: 10%;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="heading">JSONPlaceholder</h1>
+      <div class="links">
+        <a href="#">Guide</a>
+        <a href="#">Sponsor this project</a>
+        <a href="#">Blog</a>
+        <a href="#">My JSON Server</a>
+      </div>
+    </div>
+    <nav>
+      <div>
+        <h1>{JSON} Placeholder</h1>
+      </div>
+      <div class="details">
+        <p>Free fake API for testing and prototyping.</p>
+        <p>
+          Powered by
+          <a href="https://github.com/typicode/json-server">JSON Server</a> +
+          <a href="https://github.com/typicode/lowdb">LowDB</a>. Tested with
+          <a href="https://github.com/typicode/xv">XV</a>
+        </p>
+      </div>
+      <div>
+        <p class="req">Serving ~2 billion requests each month.</p>
+      </div>
+    </nav>
+
+    <main>
+      <div id="blogContainer"></div>
+
+      <form id="blogForm">
+        <h2>Add a Blog</h2>
+        <div>
+          <label for="title" class="title">Title:</label>
+          <input type="text" id="title" required />
+        </div>
+        <div>
+          <label for="content" class="content">Content:</label>
+          <textarea id="content" required></textarea>
+        </div>
+        <div class="btn">
+          <button type="submit">Add Blog</button>
+        </div>
+      </form>
+      <h1>Sponsors</h1>
+      <p>
+        JSONPlaceholder is supported by the following companies and sponsors on
+        GitHub, check them out 💖
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
