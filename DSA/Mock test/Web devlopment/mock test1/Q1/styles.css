@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* sticky position:
+- Elements with `sticky` position behave like sticky notes on a fridge.
+- They are positioned based on your scroll position but stop moving when reaching a certain point.
+- Useful for headers or menus that stick to the top of the page when you scroll down. */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 200px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* relative position:
+- Elements with `relative` position are moved relative to their normal position.
+- You can adjust their position using properties like `top`, `bottom`, `left`, and `right`.
+- The surrounding elements still see them in their original position, so they might overlap other elements. */
+
+main {
+  position: relative;
+  margin-top: 100px;
+}
+
+/* absolute position:
+- Elements with `absolute` position are like children who follow their parent.
+- They are positioned relative to the nearest "parent" element that has a `relative`, `absolute`, or `fixed` position.
+- Useful for creating overlays or tooltips on top of other elements. */
+
+.left-section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60%;
+}
+
+.right-section {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35%;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* fixed position:
+- Elements with `fixed` position are like stickers stuck to the screen.
+- They stay in the same place even when you scroll the page up or down.
+- Useful for elements like navigation bars that you want to always see. */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* static position:
+- The default position for elements on a webpage.
+- Elements with `static` position are placed in the order they appear in the HTML document.
+- They don't move from their normal position when you scroll the page. */
+
+.static-section {
+  position: static;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
