@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Form Validation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 30px;
+      }
+
+      .container {
+        width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 10px;
+      }
+
+      h1 {
+        text-align: center;
+
+        font-size: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input,
+      select {
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .error {
+        color: red;
+        font-size: 12px;
+      }
+
+      .submit-button {
+        align-self: center;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .page-content {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Basic Form Validation</h1>
+      <div class="page-content">
+        <!-- Rest of the page content here -->
+        <h2>Welcome to our website!</h2>
+        <p>Explore our services and products.</p>
+      </div>
+
+      <div class="validation-container">
+        <form id="myForm" onsubmit="validateForm(event)">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <span id="nameError" class="error"></span>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <span id="emailError" class="error"></span>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+          <span id="phoneError" class="error"></span>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <span id="passwordError" class="error"></span>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="1" required />
+          <span id="ageError" class="error"></span>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <span id="genderError" class="error"></span>
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+          <span id="dateError" class="error"></span>
+
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color" required />
+          <span id="colorError" class="error"></span>
+
+          <input type="submit" value="Submit" class="submit-button" />
+        </form>
+      </div>
+    </div>
+    <script>
+      function validateForm(event) {
+        event.preventDefault();
+
+        var nameInput = document.getElementById("name");
+        var emailInput = document.getElementById("email");
+        var phoneInput = document.getElementById("phone");
+        var passwordInput = document.getElementById("password");
+        var ageInput = document.getElementById("age");
+        var genderInput = document.getElementById("gender");
+        var dateInput = document.getElementById("date");
+        var colorInput = document.getElementById("color");
+
+        var nameError = document.getElementById("nameError");
+        var emailError = document.getElementById("emailError");
+        var phoneError = document.getElementById("phoneError");
+        var passwordError = document.getElementById("passwordError");
+        var ageError = document.getElementById("ageError");
+        var genderError = document.getElementById("genderError");
+        var dateError = document.getElementById("dateError");
+        var colorError = document.getElementById("colorError");
+
+        nameError.textContent = "";
+        emailError.textContent = "";
+        phoneError.textContent = "";
+        passwordError.textContent = "";
+        ageError.textContent = "";
+        genderError.textContent = "";
+        dateError.textContent = "";
+        colorError.textContent = "";
+
+        var isValid = true;
+
+        // Name validation
+        if (nameInput.value.trim() === "") {
+          nameError.textContent = "Name is required";
+          isValid = false;
+        }
+
+        // Email validation
+        if (emailInput.value.trim() === "") {
+          emailError.textContent = "Email is required";
+          isValid = false;
+        }
+
+        // Phone number validation
+        if (phoneInput.value.trim() === "") {
+          phoneError.textContent = "Phone number is required";
+          isValid = false;
+        }
+
+        // Password validation
+        if (passwordInput.value.trim() === "") {
+          passwordError.textContent = "Password is required";
+          isValid = false;
+        }
+
+        // Age validation
+        if (ageInput.value < 1 || ageInput.value > 120) {
+          ageError.textContent = "Age must be between 1 and 120";
+          isValid = false;
+        }
+
+        // Gender validation
+        if (genderInput.value === "") {
+          genderError.textContent = "Gender is required";
+          isValid = false;
+        }
+
+        // Date validation
+        if (dateInput.value === "") {
+          dateError.textContent = "Date is required";
+          isValid = false;
+        }
+
+        // Color validation
+        if (colorInput.value === "") {
+          colorError.textContent = "Color is required";
+          isValid = false;
+        }
+
+        if (isValid) {
+          // Form is valid, submit the form or perform other actions
+          document.getElementById("myForm").submit();
+        }
+      }
+    </script>
+  </body>
+</html>
