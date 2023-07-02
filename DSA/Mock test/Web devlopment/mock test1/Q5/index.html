@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Layout</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        padding: 50px;
+        height: 100%;
+        width: 50%;
+      }
+
+      .section1 {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+      }
+
+      .section2 {
+        grid-column: 2;
+
+        grid-row: 1 / span 2;
+      }
+
+      .section3 {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        transform: scaleY(2);
+        margin-top: 40px;
+      }
+
+      .section4 {
+        grid-column: 3;
+        grid-row: 1;
+      }
+
+      .section5 {
+        grid-column: 3;
+        grid-row: 4;
+        margin-top: -55px;
+      }
+
+      .section6 {
+        grid-column: 3;
+        grid-row: 3;
+        margin-top: -15px;
+      }
+      .section {
+        width: 100%;
+        height: 100px;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <img class="section section1" src="./flower 5.jpg" alt="" srcset="" />
+      <img class="section section2" src="./flower 6.jpg" alt="" srcset="" />
+      <img class="section section3" src="./flower 1.jpg" alt="" srcset="" />
+      <img class="section section4" src="./flower 4.jpg" alt="" srcset="" />
+      <img class="section section5" src="./flower 2.jpg" alt="" srcset="" />
+      <img class="section section6" src="flower 3.jpg" alt="" srcset="" />
+    </div>
+  </body>
+</html>
